@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7280AFDBB101D2726FCCE325 /* Pods_byteCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB70BE2AC11C85758D5A8026 /* Pods_byteCoin.framework */; };
+		834EF38AA1EF4999FB35093D /* Pods_byteCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75799EA9D77C31C5BFACE30 /* Pods_byteCoinTests.framework */; };
+		C4006CF72FF7349A39BE91E9 /* Pods_byteCoin_byteCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F6C323BC6881B953276A5C /* Pods_byteCoin_byteCoinUITests.framework */; };
+		CA0D04B02AF8305E0075A2B8 /* CurrencyExchangeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0D04AF2AF8305E0075A2B8 /* CurrencyExchangeDelegate.swift */; };
+		CA24A2C52AFBA25C00E71BDD /* roundDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24A2C42AFBA25C00E71BDD /* roundDouble.swift */; };
+		CA24A2C72AFBA2E900E71BDD /* circularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24A2C62AFBA2E900E71BDD /* circularButton.swift */; };
+		CA24A2C92AFBACBE00E71BDD /* circularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24A2C82AFBACBE00E71BDD /* circularView.swift */; };
 		CA3494F82AE56BBC004CAFD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3494F72AE56BBC004CAFD6 /* AppDelegate.swift */; };
 		CA3494FA2AE56BBD004CAFD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3494F92AE56BBD004CAFD6 /* SceneDelegate.swift */; };
 		CA3494FC2AE56BBD004CAFD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3494FB2AE56BBD004CAFD6 /* ViewController.swift */; };
@@ -18,6 +25,7 @@
 		CA34951B2AE56BC1004CAFD6 /* byteCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34951A2AE56BC1004CAFD6 /* byteCoinUITestsLaunchTests.swift */; };
 		CA34952B2AE58234004CAFD6 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34952A2AE58234004CAFD6 /* CoinManager.swift */; };
 		CA34952D2AE5980A004CAFD6 /* currentRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34952C2AE59809004CAFD6 /* currentRateModel.swift */; };
+		CA6224DE2AFB912C008994FC /* CurrentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6224DD2AFB912C008994FC /* CurrentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08F6C323BC6881B953276A5C /* Pods_byteCoin_byteCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_byteCoin_byteCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA8EFA97FA730CE0F067BCF /* Pods-byteCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoin.debug.xcconfig"; path = "Target Support Files/Pods-byteCoin/Pods-byteCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		6C25906EF825B4955333EDC0 /* Pods-byteCoin-byteCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoin-byteCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-byteCoin-byteCoinUITests/Pods-byteCoin-byteCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7C9D15C20B9B97D9EF7B941F /* Pods-byteCoin-byteCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoin-byteCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-byteCoin-byteCoinUITests/Pods-byteCoin-byteCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		821213A44980B4ECB38E6662 /* Pods-byteCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoin.release.xcconfig"; path = "Target Support Files/Pods-byteCoin/Pods-byteCoin.release.xcconfig"; sourceTree = "<group>"; };
+		959EC8AF65DA405D2683D44D /* Pods-byteCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-byteCoinTests/Pods-byteCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5C44305398CEF040BBE2769 /* Pods-byteCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-byteCoinTests.release.xcconfig"; path = "Target Support Files/Pods-byteCoinTests/Pods-byteCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		C75799EA9D77C31C5BFACE30 /* Pods_byteCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_byteCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA0D04AF2AF8305E0075A2B8 /* CurrencyExchangeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeDelegate.swift; sourceTree = "<group>"; };
+		CA24A2C42AFBA25C00E71BDD /* roundDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundDouble.swift; sourceTree = "<group>"; };
+		CA24A2C62AFBA2E900E71BDD /* circularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circularButton.swift; sourceTree = "<group>"; };
+		CA24A2C82AFBACBE00E71BDD /* circularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circularView.swift; sourceTree = "<group>"; };
 		CA3494F42AE56BBC004CAFD6 /* byteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = byteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3494F72AE56BBC004CAFD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3494F92AE56BBD004CAFD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +73,8 @@
 		CA34951A2AE56BC1004CAFD6 /* byteCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = byteCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CA34952A2AE58234004CAFD6 /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 		CA34952C2AE59809004CAFD6 /* currentRateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = currentRateModel.swift; sourceTree = "<group>"; };
+		CA6224DD2AFB912C008994FC /* CurrentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentModel.swift; sourceTree = "<group>"; };
+		FB70BE2AC11C85758D5A8026 /* Pods_byteCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_byteCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7280AFDBB101D2726FCCE325 /* Pods_byteCoin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834EF38AA1EF4999FB35093D /* Pods_byteCoinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +98,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4006CF72FF7349A39BE91E9 /* Pods_byteCoin_byteCoinUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32E35EA2D0EAF4F418F49A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DA8EFA97FA730CE0F067BCF /* Pods-byteCoin.debug.xcconfig */,
+				821213A44980B4ECB38E6662 /* Pods-byteCoin.release.xcconfig */,
+				7C9D15C20B9B97D9EF7B941F /* Pods-byteCoin-byteCoinUITests.debug.xcconfig */,
+				6C25906EF825B4955333EDC0 /* Pods-byteCoin-byteCoinUITests.release.xcconfig */,
+				959EC8AF65DA405D2683D44D /* Pods-byteCoinTests.debug.xcconfig */,
+				C5C44305398CEF040BBE2769 /* Pods-byteCoinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA0D04AE2AF8303E0075A2B8 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CA0D04AF2AF8305E0075A2B8 /* CurrencyExchangeDelegate.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		CA24A2C32AFBA23E00E71BDD /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA24A2C42AFBA25C00E71BDD /* roundDouble.swift */,
+				CA24A2C62AFBA2E900E71BDD /* circularButton.swift */,
+				CA24A2C82AFBACBE00E71BDD /* circularView.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		CA3494EB2AE56BBC004CAFD6 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +143,8 @@
 				CA34950D2AE56BC1004CAFD6 /* byteCoinTests */,
 				CA3495172AE56BC1004CAFD6 /* byteCoinUITests */,
 				CA3494F52AE56BBC004CAFD6 /* Products */,
+				C32E35EA2D0EAF4F418F49A4 /* Pods */,
+				CB09A581C344D68741068F59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +161,8 @@
 		CA3494F62AE56BBC004CAFD6 /* byteCoin */ = {
 			isa = PBXGroup;
 			children = (
+				CA24A2C32AFBA23E00E71BDD /* extension */,
+				CA0D04AE2AF8303E0075A2B8 /* protocol */,
 				CA3495292AE5820A004CAFD6 /* View */,
 				CA3495282AE58202004CAFD6 /* Model */,
 				CA3495272AE581EF004CAFD6 /* Controller */,
@@ -145,6 +205,7 @@
 			children = (
 				CA34952C2AE59809004CAFD6 /* currentRateModel.swift */,
 				CA34952A2AE58234004CAFD6 /* CoinManager.swift */,
+				CA6224DD2AFB912C008994FC /* CurrentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +218,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CB09A581C344D68741068F59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB70BE2AC11C85758D5A8026 /* Pods_byteCoin.framework */,
+				08F6C323BC6881B953276A5C /* Pods_byteCoin_byteCoinUITests.framework */,
+				C75799EA9D77C31C5BFACE30 /* Pods_byteCoinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA34951E2AE56BC1004CAFD6 /* Build configuration list for PBXNativeTarget "byteCoin" */;
 			buildPhases = (
+				CCBF050890662339611D3EB4 /* [CP] Check Pods Manifest.lock */,
 				CA3494F02AE56BBC004CAFD6 /* Sources */,
 				CA3494F12AE56BBC004CAFD6 /* Frameworks */,
 				CA3494F22AE56BBC004CAFD6 /* Resources */,
+				C41ED54F7F52036EDAE7A878 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3495212AE56BC1004CAFD6 /* Build configuration list for PBXNativeTarget "byteCoinTests" */;
 			buildPhases = (
+				5DC290B609AC87EAFCA17459 /* [CP] Check Pods Manifest.lock */,
 				CA3495062AE56BC1004CAFD6 /* Sources */,
 				CA3495072AE56BC1004CAFD6 /* Frameworks */,
 				CA3495082AE56BC1004CAFD6 /* Resources */,
@@ -199,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA3495242AE56BC1004CAFD6 /* Build configuration list for PBXNativeTarget "byteCoinUITests" */;
 			buildPhases = (
+				016341CEC03E90B80272D420 /* [CP] Check Pods Manifest.lock */,
 				CA3495102AE56BC1004CAFD6 /* Sources */,
 				CA3495112AE56BC1004CAFD6 /* Frameworks */,
 				CA3495122AE56BC1004CAFD6 /* Resources */,
+				089DDB4E9DAA9841A551EB77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +359,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		016341CEC03E90B80272D420 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-byteCoin-byteCoinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		089DDB4E9DAA9841A551EB77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-byteCoin-byteCoinUITests/Pods-byteCoin-byteCoinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-byteCoin-byteCoinUITests/Pods-byteCoin-byteCoinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-byteCoin-byteCoinUITests/Pods-byteCoin-byteCoinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC290B609AC87EAFCA17459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-byteCoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41ED54F7F52036EDAE7A878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-byteCoin/Pods-byteCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-byteCoin/Pods-byteCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-byteCoin/Pods-byteCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCBF050890662339611D3EB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-byteCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA3494F02AE56BBC004CAFD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,7 +471,12 @@
 				CA3494FC2AE56BBD004CAFD6 /* ViewController.swift in Sources */,
 				CA3494F82AE56BBC004CAFD6 /* AppDelegate.swift in Sources */,
 				CA3494FA2AE56BBD004CAFD6 /* SceneDelegate.swift in Sources */,
+				CA6224DE2AFB912C008994FC /* CurrentModel.swift in Sources */,
+				CA24A2C92AFBACBE00E71BDD /* circularView.swift in Sources */,
 				CA34952D2AE5980A004CAFD6 /* currentRateModel.swift in Sources */,
+				CA0D04B02AF8305E0075A2B8 /* CurrencyExchangeDelegate.swift in Sources */,
+				CA24A2C52AFBA25C00E71BDD /* roundDouble.swift in Sources */,
+				CA24A2C72AFBA2E900E71BDD /* circularButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,19 +653,20 @@
 		};
 		CA34951F2AE56BC1004CAFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA8EFA97FA730CE0F067BCF /* Pods-byteCoin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDX45LBBX3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = byteCoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,19 +683,20 @@
 		};
 		CA3495202AE56BC1004CAFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821213A44980B4ECB38E6662 /* Pods-byteCoin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DDX45LBBX3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = byteCoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,6 +713,7 @@
 		};
 		CA3495222AE56BC1004CAFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959EC8AF65DA405D2683D44D /* Pods-byteCoinTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -547,6 +734,7 @@
 		};
 		CA3495232AE56BC1004CAFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C44305398CEF040BBE2769 /* Pods-byteCoinTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,6 +755,7 @@
 		};
 		CA3495252AE56BC1004CAFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9D15C20B9B97D9EF7B941F /* Pods-byteCoin-byteCoinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -585,6 +774,7 @@
 		};
 		CA3495262AE56BC1004CAFD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C25906EF825B4955333EDC0 /* Pods-byteCoin-byteCoinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

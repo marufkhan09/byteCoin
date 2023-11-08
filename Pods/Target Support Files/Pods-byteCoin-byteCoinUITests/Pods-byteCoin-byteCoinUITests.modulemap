@@ -1,0 +1,6 @@
+framework module Pods_byteCoin_byteCoinUITests {
+  umbrella header "Pods-byteCoin-byteCoinUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
